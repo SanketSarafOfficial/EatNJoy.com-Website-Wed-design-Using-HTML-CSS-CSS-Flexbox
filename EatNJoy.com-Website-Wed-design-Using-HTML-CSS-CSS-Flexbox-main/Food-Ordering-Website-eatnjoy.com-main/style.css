@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-size:1.2vw; */
+  
+  
+}
+
+:root {
+  --navbar-height: 59px;
+  
+}
+
+/* navigation bar */
+
+#navbar{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+ 
+  position: fixed;
+  opacity: 2;
+  height: 100px;
+  top:0px;
+  max-width: 100%;
+ 
+
+}
+
+#navbar ul li a
+{
+  font-size:1.4rem;
+  padding: 0px 6 px;
+}
+
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+/* images and logo */
+
+#logo {
+  margin: 20px 30px;
+}
+#logo img {
+  margin: 3px 4px;
+  height: 120px;
+  border-radius: 45%;
+}
+
+#list {
+  display: flex;
+  font-size: 1.3rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+#list li {
+  list-style: none;
+  font-size: 1.3rem;
+  /* color:white; */
+}
+
+#list li a {
+  color: white;
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#list li a:hover {
+  color: black;
+  background: white;
+}
+
+#Home
+{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height:720px;
+  
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+
+}
+
+#Home::before
+{
+  content: "";
+  background-color: black;
+  background: url('https://cdn.pixabay.com/photo/2015/07/02/10/44/tea-828940_960_720.jpg') no-repeat center center/cover;
+  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin:auto;
+  z-index: -2;
+  opacity: 1.5;
+}
+
+
+.heading
+{
+padding: 12px;
+font-size: 3.8rem;
+
+}
+#Home h1{
+color:white;
+text-align: center;
+font-family: 'Bree Serif', serif;
+}
+
+#Home p{
+  color:white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding:10px;
+  }
+
+.btn
+{
+  padding:10px ;
+  border-radius:20px;
+  border:2px solid white;
+  background-color: brown;
+  color:white;
+  margin:17px;
+  font-size: 20px;
+  cursor:pointer;
+
+
+}
+
+.h-primary{
+  font-size:3.8rem;
+  
+  padding:12px;
+  border:2px solid black;
+  background: url('https://media.istockphoto.com/videos/black-food-background-concept-for-design-menu-restaurant-or-cafe-copy-video-id1201294000?s=640x640')  center;
+  color:white;
+  font-family: 'Baloo Bhai 2', cursive;
+ 
+  
+}
+
+
+.h2-secondary
+{
+  font-size:2.8rem;
+  padding:12px;
+}
+
+#image1
+{
+  height:190px;
+  display:flex;
+  justify-content: center;
+  padding:20px;
+  /* padding-bottom: 30px; */
+  margin:auto;
+  /* display: block; */
+  border-radius: 55%;
+
+
+}
+
+.center
+{
+  text-align:center;
+
+}
+
+.services
+{
+  display:flex;
+  
+  flex-direction: column;
+  padding: 50px;
+  margin-top: auto;
+  background: url('https://media.istockphoto.com/videos/black-food-background-concept-for-design-menu-restaurant-or-cafe-copy-video-id1201294000?s=640x640') no-repeat center center/cover ;
+  color:white;
+  max-width: 100%;
+  height:auto;
+  
+
+}
+
+.box
+{
+  
+}
+
+.aboutus
+{
+ 
+  display:flex;
+  
+  flex-direction: column;
+  padding: 50px;
+  margin-top: auto;
+  background: url('https://media.istockphoto.com/videos/black-food-background-concept-for-design-menu-restaurant-or-cafe-copy-video-id1201294000?s=640x640') no-repeat center center/cover ;
+  color:white;
+  max-width: 100%;
+  height:auto;
+}
+
+.contactus{
+  display:flex;
+  
+  flex-direction: column;
+  padding: 50px;
+  margin-top: auto;
+  background: url('https://media.istockphoto.com/videos/black-food-background-concept-for-design-menu-restaurant-or-cafe-copy-video-id1201294000?s=640x640') no-repeat center center/cover ;
+  color:white;
+  max-width: 100%;
+  height:auto;
+  
+
+}
+
+.feedback{
+
+  display:flex;
+  
+  flex-direction: column;
+  padding: 50px;
+  margin-top: auto;
+  background: url('https://media.istockphoto.com/videos/black-food-background-concept-for-design-menu-restaurant-or-cafe-copy-video-id1201294000?s=640x640') no-repeat center center/cover ;
+  color:white;
+  max-width: 100%;
+  height:auto;
+
+}
+
+.font
+{
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.fsize
+{
+font-size: 30px;
+color:white;
+font-stretch: expanded;
+}
+
+.real
+{
+  display:flex;
+  justify-content: center;
+  border:2px solid transparent;
+  color:yellow;
+
+}
+
+/* .heading{
+  animation-name:title;
+  animation-duration:4s;
+
+  @keyframes title {
+
+    0%
+    {
+     font-size:100px;
+
+    }
+
+    50%
+    {
+      font-size:100px;
+      
+    }
+
+    100%
+    {
+      font-size:100px;
+      
+    }
+    
+  }
+} */
+
+h1:hover{
+  transform:scale(1.3);
+}
+
+
+.btn:hover{
+  transform: scale(1.3);
+
+}
+
+
+.grow1:hover{
+  transform: scale(1.3);
+
+}
+
+.fsize1
+{
+  font-size: 25px;
+}
+
+.grow
+{
+ 
+ color:wheat;
+
+}
+
+#form
+{
+  display: flex;
+  flex-grow: 2px;
+  justify-content: center;
+  padding:20px;
+  flex-direction: row;
+ 
+
+}
+
+
+#name
+{
+  display: flex;
+    padding:2px;
+    font-size: 15px;
+}
+
+#phone
+{
+  display: flex;
+  padding:2px;
+  font-size: 15px;
+}
+#gender{
+  display:flex;
+  align-items: center;
+  padding:2px;
+  flex-direction: row;
+  font-size: 15px;
+}
+#email
+{
+  display: flex;
+  padding:2px;
+  font-size: 15px;
+}
+#feedback
+{
+  display: flex;
+  padding:2px;
+  font-size: 15px;
+}
+
+#submit
+{
+
+  display: flex;
+  padding:2px;
+  font-size: 15px;
+  
+
+}
+
+#submit:hover
+{
+ transform: scale(1.2);
+}
+ 
+ #logo
+{
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+  background: url('https://cdn.pixabay.com/photo/2015/07/10/14/04/coffee-839233_960_720.jpg')   ;
+  background-color: black;
+  opacity: 1;
+  z-index: 2;
+
+  
+
+ 
+  
+
+} 
+
+ #apple
+{
+  
+ 
+}
+
+#micro
+{
+
+
+}
+
+#amazon
+{
+  
+  
+}
+
+#google
+{
+  
+ 
+}
+
+#walmart
+{
+  
+
+} 
+
+#client
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+#footer
+{
+ 
+  background-color:grey;
+  opacity: 1;
+}
